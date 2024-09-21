@@ -119,6 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Uri uri = Uri.parse(
         'http://164.68.107.70:6060/api/v1/DeleteProduct/$productId');
     Response response = await get(uri);
+
     print(response.statusCode);
     print(response.body);
 
@@ -136,8 +137,5 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       );
     }
-
-    _inProgress = false;
-    setState(() {});
   }
 }
